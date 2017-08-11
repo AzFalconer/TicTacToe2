@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Bitter|Orbitron|Righteous|Exo|Mogra|Tangerine|Acme|OpenSans);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+$pColor: white;
+$pFont: Acme, serif;
+$width: 9vw;
+$borderColor: #588dff;
+$borderWidth: .2vw;
+
+
+* {box-sizing: border-box;}
+a {text-decoration: none; color: white;}
+i {color: white;}
+body {margin: 0 auto; display: flex; background-image: url("http://redtailbooks.com/codeCamp/images/blueBackground.jpg"); padding: 2vw;} //background-color: rgba(#2134b6, 0.79);
+button {padding: 8px 12px; background: #4162a8;border-top: 1px solid #38538c;border-right: 1px solid #1f2d4d;border-bottom: 1px solid #151e33;border-left: 1px solid #1f2d4d;border-radius: 4px;-webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;color: #fff;margin: 1vw;font-family: $pFont; font-size: 1.5vw;text-align: center;text-shadow: 0 -1px 1px #1e2d4d;-webkit-background-clip: padding-box;}
+button:hover {-webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;cursor: pointer;}
+button:active {padding: 8px 10px; -webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053;box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053; cursor: pointer;}
+.choice {position: absolute; top: 10%; left: 30%; width: 40%; background-color: lightgrey; border: solid 5px navy; border-radius: 10px; text-align: center; font-family: Acme, serif; font-size: 2vw; z-index: 2;}
+.wrap {margin: 0 auto; flex-direction: column;}
+.title {line-height: calc($width/2); width: calc($width * 3); color: #5ea5df; text-align: center; font-family: $pFont; font-size: 2.5vw; border: $borderWidth solid $borderColor; border-radius: 10px 10px 0 0;}
+.board {display: flex; background-color: rgba(#465df6, 0.1); width: calc($width * 3); height: calc($width * 3);} //rgba(#465df6, 0.63)
+.display {line-height: calc($width/2); width: calc($width * 3); color: #5ea5df; text-align: center; font-family: $pFont; font-size: 2.5vw; border: $borderWidth solid $borderColor;}
+.flex-row {}
+.cell {flex: 1; cursor: pointer; width: $width; height: $width; line-height: $width; border: $borderWidth solid $borderColor; text-align: center; vertical-align: middle; font-family: Gloria Hallelujah; font-size: 3vw; color: navy; text-shadow: 1px 1px 5px white, -1px 1px 5px white;} //#588dff
+.cell:hover { -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1); -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1); box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);}
+.footer {position:fixed;bottom:5px;width:100%;height:auto;margin-top:40px;text-align:center;font-family: $pFont; font-size: 1vw;}
